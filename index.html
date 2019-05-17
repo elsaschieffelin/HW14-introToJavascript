@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel = 'stylesheet' href='styles.css'>
+    <title>UFOs</title>
+</head>
+<body>      
+    <div class = 'container'>
+        <div class = 'row'>
+            <div class = 'col-md-4'>
+                <form class="form-inline">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" id = 'ufo_date' type="text" placeholder="Search Date/Time" aria-label="Search">
+                    <button id='search_date' type='submit' class='btn btn-default'>Search</button>    
+                </form>
+            </div>
+            <div class = 'col-md-4'>
+                <form class="form-inline">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input class="form-control form-control-sm ml-3 w-75" id = 'ufo_city' type="text" placeholder="Search City" aria-label="Search">
+                        <button id='search_city' type='submit' class='btn btn-default'>Search</button>    
+                </form>  
+            </div>            
+            <div class = 'col-md-4'>
+                <form class="form-inline">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input class="form-control form-control-sm ml-3 w-75" id = 'ufo_state' type="text" placeholder="Search State" aria-label="Search">
+                        <button id='search_state' type='submit' class='btn btn-default'>Search</button>    
+                </form>  
+            </div>  
+        </div>
+        <div class = 'row'>
+            <div class = 'col-md-4'>
+                <form class="form-inline">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" id = 'ufo_country' type="text" placeholder="Search Country" aria-label="Search">
+                    <button id='search_country' type='submit' class='btn btn-default'>Search</button>    
+                </form>
+            </div>
+            <div class = 'col-md-4'>
+                <form class="form-inline">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" id = 'ufo_shape' type="text" placeholder="Search Shape" aria-label="Search">
+                    <button id='search_shape' type='submit' class='btn btn-default'>Search</button>    
+                </form>
+            </div>  
+            <div class = 'col-md-4'>
+                <form class="form-inline">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" id = 'ufo_general' type="text" placeholder="General Search" aria-label="Search">
+                    <button id='search_general' type='submit' class='btn btn-default'>Search</button>    
+                </form>
+            </div>         
+        </div>
+        <div class = 'row'>
+            <div class = 'col-md-12'>
+                <h1>U.F.O. Sightings</h1>
+                <p>Beam them up.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = 'datetime'>Date/Time</th>
+                            <th class = 'city'>City</th>
+                            <th class = 'state'>State</th>
+                            <th class = 'country'>Country</th>
+                            <th class = 'shape'>Shape</th>
+                            <th class = 'durationMinutes'>Duration in Minutes</th>
+                            <th class = 'comments'>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src='data.js'></script>
+    <script src='app.js'></script>
+</body>
+</html>

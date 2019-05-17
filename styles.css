@@ -1,0 +1,34 @@
+body {
+    background: radial-gradient(ellipse at bottom, #12172c 0%, #1d2e41 100%);
+    padding: 40px;
+}
+.col-md-12 {
+    background-color:white;
+    color: midnightblue;
+    text-align: center;
+    font-family: Courier;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+p {
+    font-style: italic;
+    color: rgb(59, 59, 107);
+}
+th {
+    text-align: center;
+    font-family: Courier;
+    color: midnightblue;
+}
+td {
+    color: rgb(59, 59, 107);
+}
+h1 {
+    text-align: center;
+    color: rgb(13, 13, 80);
+    font-weight: 500;
+    font-family: Courier;
+}
+.row {
+    padding-bottom: 20px; 
+}
